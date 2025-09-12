@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { Stage, Layer, Line } from 'react-konva';
+import { Stage, Layer, Line, Shape } from 'react-konva';
 import StationView from './StationView';
 
 const DashboardView = ({ layout, setFullscreen, occupiedBlocks, trains }) => {
@@ -66,12 +66,47 @@ const DashboardView = ({ layout, setFullscreen, occupiedBlocks, trains }) => {
                 const toPoint = getTrackEndPoint(line.to, line.toTrackId, true);
                 if(!fromPoint || !toPoint) return null;
                 
-                const points = [fromPoint.x, fromPoint.y];
                 if (line.vertical) {
-                    points.push(fromPoint.x, toPoint.y);
-                }
-                points.push(toPoint.x, toPoint.y);
+                  const baseRadius = 50; // You can adjust the tightness of the curve
+                  const trackSeparation = 30; // Distance between main_up and main_down
 
+                  // This logic correctly determines if a track is on the inside or outside of a turn,
+                  // regardless of which direction the turn is.
+                  const isLeftTurn = toPoint.x < fromPoint.x;
+                  const isUpwardTurn = toPoint.y < fromPoint.y;
+                  const isDownTrack = line.fromTrackId.includes('down');
+                  
+                  let radius;
+                  if ((isLeftTurn && isDownTrack) || (!isLeftTurn && !isDownTrack) || (isUpwardTurn && isDownTrack) || (!isUpwardTurn && !isDownTrack)) {
+                     // Conditions where this track is on the outside of the curve
+                     radius = baseRadius + trackSeparation;
+                  } else {
+                    // Conditions where this track is on the inside of the curve
+                    radius = baseRadius;
+                  }
+
+                  // A simpler but less robust way to determine radius for your specific layout
+                  // const radius = line.fromTrackId.includes('down') ? baseRadius + trackSeparation : baseRadius;
+
+
+                  return (
+                    <Shape
+                      key={index}
+                      sceneFunc={(ctx, shape) => {
+                        ctx.beginPath();
+                        ctx.moveTo(fromPoint.x, fromPoint.y);
+                        ctx.arcTo(fromPoint.x, toPoint.y, toPoint.x, toPoint.y, radius);
+                        ctx.lineTo(toPoint.x, toPoint.y);
+                        ctx.strokeShape(shape);
+                      }}
+                      stroke={layout.general.trackColor}
+                      strokeWidth={5}
+                      dash={[10, 5]}
+                    />
+                  );
+                }
+
+                const points = [fromPoint.x, fromPoint.y, toPoint.x, toPoint.y];
                 return <Line key={index} points={points} stroke={layout.general.trackColor} strokeWidth={5} dash={[10, 5]}/>
              })}
            </Layer>
