@@ -1,0 +1,189 @@
+{
+  "general": {
+    "backgroundColor": "#1a1a1a",
+    "trackColor": "#888888",
+    "platformColor": "#2a2a2a",
+    "occupiedColor": "#ff4d4d",
+    "labelColor": "#ffffff",
+    "trainColor": "#9d4edd",
+    "signalDangerColor": "#ff0000",
+    "signalClearColor": "#00ff00"
+  },
+  "stations": {
+    "AJJ": {
+      "name": "Arakkonam Junction", "code": "AJJ", "position": [0, 0], "width": 900,
+      "platforms": [{"trackId": "p1"}, {"trackId": "p2"}, {"trackId": "p3"}, {"trackId": "p4"}, {"trackId": "p5"}, {"trackId": "p6"}, {"trackId": "p7"}, {"trackId": "p8"}],
+      "tracks": [
+        {"id": "main_up", "points": [0, 155, 900, 155]},
+        {"id": "main_down", "points": [0, 185, 900, 185]},
+        {"id": "p1", "points": [150, 80, 750, 80]},
+        {"id": "p2", "points": [150, 110, 750, 110]},
+        {"id": "p3", "points": [150, 140, 750, 140]},
+        {"id": "p4", "points": [150, 170, 750, 170]},
+        {"id": "p5", "points": [150, 200, 750, 200]},
+        {"id": "p6", "points": [150, 230, 750, 230]},
+        {"id": "p7", "points": [150, 260, 750, 260]},
+        {"id": "p8", "points": [150, 290, 750, 290], "buffer": "east"}
+      ],
+      "platformLabels": [
+        {"text": "PF 1", "x": 450, "y": 70}, {"text": "PF 2", "x": 450, "y": 100}, {"text": "PF 3", "x": 450, "y": 130},
+        {"text": "PF 4", "x": 450, "y": 160}, {"text": "PF 5", "x": 450, "y": 190}, {"text": "PF 6", "x": 450, "y": 220},
+        {"text": "PF 7", "x": 450, "y": 250}, {"text": "PF 8", "x": 450, "y": 280}
+      ],
+      "trackLabels": [
+        {"text": "UP MAIN (TO TRT)", "x": 780, "y": 145},
+        {"text": "DOWN MAIN (FROM TRT)", "x": 780, "y": 195}
+      ],
+      "signals": [
+        {"id": "S1_AJJ", "trackId": "main_up", "positionRatio": 0.15, "state": "danger"},
+        {"id": "S2_AJJ", "trackId": "main_down", "positionRatio": 0.85, "state": "clear"}
+      ],
+      "pointLabels": [
+        {"text": "101A", "x": 130, "y": 155}, {"text": "101B", "x": 130, "y": 185}, {"text": "102", "x": 440, "y": 170}
+      ],
+      "switches": [
+        {"id": "sw_w1_a", "type": "turnout", "points": [150, 140, 100, 155]},
+        {"id": "sw_w1_b", "type": "turnout", "points": [150, 155, 100, 140]},
+        {"id": "sw_w2_a", "type": "turnout", "points": [150, 170, 100, 155]},
+        {"id": "sw_w2_b", "type": "turnout", "points": [150, 155, 100, 170]},
+        {"id": "sw_w3_a", "type": "turnout", "points": [150, 170, 100, 185]},
+        {"id": "sw_w3_b", "type": "turnout", "points": [150, 185, 100, 170]},
+        {"id": "sw_w4_a", "type": "turnout", "points": [150, 200, 100, 185]},
+        {"id": "sw_w4_b", "type": "turnout", "points": [150, 185, 100, 200]},
+        {"id": "sw_w_l1_a", "type": "crossover", "points": [250, 80, 300, 110]},
+        {"id": "sw_w_l1_b", "type": "crossover", "points": [250, 110, 300, 80]},
+        {"id": "sw_w_l2_a", "type": "crossover", "points": [300, 110, 350, 140]},
+        {"id": "sw_w_l2_b", "type": "crossover", "points": [300, 140, 350, 110]},
+        {"id": "sw_w_l3_a", "type": "crossover", "points": [250, 200, 300, 230]},
+        {"id": "sw_w_l3_b", "type": "crossover", "points": [250, 230, 300, 200]},
+        {"id": "sw_w_l4_a", "type": "crossover", "points": [300, 230, 350, 260]},
+        {"id": "sw_w_l4_b", "type": "crossover", "points": [300, 260, 350, 230]},
+        {"id": "sw_w_l5_a", "type": "crossover", "points": [350, 260, 400, 290]},
+        {"id": "sw_w_l5_b", "type": "crossover", "points": [350, 290, 400, 260]},
+        {"id": "diamond_1", "type": "diamond", "points": [425, 155, 475, 185]},
+        {"id": "sw_e_l1_a", "type": "crossover", "points": [550, 80, 600, 110]},
+        {"id": "sw_e_l1_b", "type": "crossover", "points": [550, 110, 600, 80]},
+        {"id": "sw_e_l2_a", "type": "crossover", "points": [600, 110, 650, 140]},
+        {"id": "sw_e_l2_b", "type": "crossover", "points": [600, 140, 650, 110]},
+        {"id": "sw_e1_a", "type": "turnout", "points": [750, 140, 800, 155]},
+        {"id": "sw_e1_b", "type": "turnout", "points": [750, 155, 800, 140]},
+        {"id": "sw_e2_a", "type": "turnout", "points": [750, 170, 800, 155]},
+        {"id": "sw_e2_b", "type": "turnout", "points": [750, 155, 800, 170]},
+        {"id": "sw_e3_a", "type": "turnout", "points": [750, 170, 800, 185]},
+        {"id": "sw_e3_b", "type": "turnout", "points": [750, 185, 800, 170]},
+        {"id": "sw_e4_a", "type": "turnout", "points": [750, 200, 800, 185]},
+        {"id": "sw_e4_b", "type": "turnout", "points": [750, 185, 800, 200]}
+      ]
+    },
+    "TRT": {
+      "name": "Tiruttani", "code": "TRT", "position": [950, 0], "width": 600,
+       "platforms": [{"trackId": "p1_loop"}, {"trackId": "p2_main"}, {"trackId": "p3_main"}],
+       "platformLabels": [
+        {"text": "PF 1", "x": 300, "y": 90}, {"text": "PF 2", "x": 300, "y": 120}, {"text": "PF 3", "x": 300, "y": 150}
+       ],
+       "signals": [
+        {"id": "S3_TRT", "trackId": "main_up", "positionRatio": 0.1, "state": "clear"}
+       ],
+      "tracks": [
+        {"id": "main_up", "points": [0, 130, 600, 130]},
+        {"id": "main_down", "points": [0, 160, 600, 160]},
+        {"id": "p1_loop", "points": [100, 100, 500, 100], "buffer": "east"},
+        {"id": "p2_main", "points": [0, 130, 600, 130]},
+        {"id": "p3_main", "points": [0, 160, 600, 160]}
+      ],
+      "switches": [
+        {"id": "sw1_a", "type": "turnout", "points": [100, 130, 150, 100]},
+        {"id": "sw1_b", "type": "turnout", "points": [100, 100, 150, 130]},
+        {"id": "sw2_a", "type": "turnout", "points": [500, 130, 450, 100]},
+        {"id": "sw2_b", "type": "turnout", "points": [500, 100, 450, 130]},
+        {"id": "sw3", "type": "diamond", "points": [300, 130, 350, 160]}
+      ]
+    },
+    "NG": {
+      "name": "Nagari", "code": "NG", "position": [1600, 0], "width": 600,
+      "platforms": [{"trackId": "p1_loop"}],
+      "tracks": [
+        {"id": "main_up", "points": [0, 130, 600, 130]},
+        {"id": "main_down", "points": [0, 160, 600, 160]},
+        {"id": "p1_loop", "points": [100, 100, 500, 100]}
+      ],
+      "switches": [
+        {"id": "sw1_a", "type": "turnout", "points": [100, 130, 150, 100]},
+        {"id": "sw1_b", "type": "turnout", "points": [100, 100, 150, 130]},
+        {"id": "sw2_a", "type": "turnout", "points": [500, 130, 450, 100]},
+        {"id": "sw2_b", "type": "turnout", "points": [500, 100, 450, 130]}
+      ]
+    },
+    "PUT": {
+      "name": "Putlur", "code": "PUT", "position": [0, 450], "width": 900,
+      "platforms": [],
+      "tracks": [
+        {"id": "main_up", "points": [0, 130, 900, 130]},
+        {"id": "main_down", "points": [0, 160, 900, 160]}
+      ],
+      "switches": [
+        {"id": "sw1", "type": "diamond", "points": [400, 130, 450, 160]}
+      ]
+    },
+    "RU": {
+      "name": "Renigunta Junction", "code": "RU", "position": [950, 450], "width": 850,
+      "platforms": [{"trackId": "p1"}, {"trackId": "p2"}, {"trackId": "p3"}, {"trackId": "p4"}, {"trackId": "p5"}],
+      "tracks": [
+        {"id": "main_up", "points": [0, 160, 850, 160]},
+        {"id": "main_down", "points": [0, 190, 850, 190]},
+        {"id": "p1", "points": [100, 100, 750, 100]},
+        {"id": "p2", "points": [100, 130, 750, 130]},
+        {"id": "p3", "points": [100, 160, 750, 160]},
+        {"id": "p4", "points": [100, 190, 750, 190]},
+        {"id": "p5", "points": [100, 220, 750, 220], "buffer": "west"}
+      ],
+      "switches": [
+        {"id": "sw1_a", "type": "turnout", "points": [100, 160, 150, 130]},
+        {"id": "sw1_b", "type": "turnout", "points": [100, 130, 150, 160]},
+        {"id": "sw2_a", "type": "turnout", "points": [100, 190, 150, 220]},
+        {"id": "sw2_b", "type": "turnout", "points": [100, 220, 150, 190]},
+        {"id": "sw3_a", "type": "crossover", "points": [200, 100, 250, 130]},
+        {"id": "sw3_b", "type": "crossover", "points": [200, 130, 250, 100]},
+        {"id": "diamond_1", "type": "diamond", "points": [400, 160, 450, 190]},
+        {"id": "sw4_a", "type": "crossover", "points": [600, 190, 650, 220]},
+        {"id": "sw4_b", "type": "crossover", "points": [600, 220, 650, 190]},
+        {"id": "sw5_a", "type": "turnout", "points": [750, 160, 700, 130]},
+        {"id": "sw5_b", "type": "turnout", "points": [750, 130, 700, 160]},
+        {"id": "sw6_a", "type": "turnout", "points": [750, 190, 700, 220]},
+        {"id": "sw6_b", "type": "turnout", "points": [750, 220, 700, 190]}
+      ]
+    }
+  },
+  "trunkLines": [
+    {"from": "AJJ", "fromTrackId": "main_up", "to": "TRT", "toTrackId": "main_up"},
+    {"from": "AJJ", "fromTrackId": "main_down", "to": "TRT", "toTrackId": "main_down"},
+    {"from": "TRT", "fromTrackId": "main_up", "to": "NG", "toTrackId": "main_up"},
+    {"from": "TRT", "fromTrackId": "main_down", "to": "NG", "toTrackId": "main_down"},
+    {"from": "NG", "fromTrackId": "main_up", "to": "PUT", "toTrackId": "main_up"},
+    {"from": "NG", "fromTrackId": "main_down", "to": "PUT", "toTrackId": "main_down"},
+    {"from": "PUT", "fromTrackId": "main_up", "to": "RU", "toTrackId": "main_up"},
+    {"from": "PUT", "fromTrackId": "main_down", "to": "RU", "toTrackId": "main_down"}
+  ],
+  "occupiedBlocks": [
+      {"stationCode": "AJJ", "trackId": "p4", "startRatio": 0.3, "endRatio": 0.6}
+  ],
+  "trains": [
+      {"id": "T22601", "stationCode": "AJJ", "trackId": "p3", "positionRatio": 0.2, "speed": 0.003},
+      {"id": "T12798", "stationCode": "RU", "trackId": "p2", "positionRatio": 0.8, "speed": -0.002},
+      {"id": "T16057", "stationCode": "AJJ", "trackId": "p5", "positionRatio": 0.5, "speed": 0.0025},
+      {"id": "T06417", "stationCode": "TRT", "trackId": "p1_loop", "positionRatio": 0.1, "speed": 0},
+      {"id": "T12164", "stationCode": "NG", "trackId": "main_down", "positionRatio": 0.9, "speed": -0.004},
+      {"id": "T17209", "stationCode": "AJJ", "trackId": "p1", "positionRatio": 0.3, "speed": 0.0035},
+      {"id": "T12842", "stationCode": "RU", "trackId": "p4", "positionRatio": 0.6, "speed": -0.002},
+      {"id": "T22625", "stationCode": "AJJ", "trackId": "p6", "positionRatio": 0.7, "speed": 0.0015},
+      {"id": "T43801", "stationCode": "TRT", "trackId": "p2_main", "positionRatio": 0.4, "speed": 0},
+      {"id": "T12712", "stationCode": "RU", "trackId": "p1", "positionRatio": 0.2, "speed": -0.003},
+      {"id": "T11041", "stationCode": "PUT", "trackId": "main_up", "positionRatio": 0.5, "speed": 0.005},
+      {"id": "T11028", "stationCode": "AJJ", "trackId": "p8", "positionRatio": 0.1, "speed": 0.002},
+      {"id": "T22159", "stationCode": "NG", "trackId": "p1_loop", "positionRatio": 0.8, "speed": 0},
+      {"id": "T12603", "stationCode": "RU", "trackId": "main_down", "positionRatio": 0.3, "speed": -0.004},
+      {"id": "T12695", "stationCode": "AJJ", "trackId": "main_up", "positionRatio": 0.95, "speed": 0.005},
+      {"id": "T12839", "stationCode": "PUT", "trackId": "main_down", "positionRatio": 0.2, "speed": -0.005},
+      {"id": "T12077", "stationCode": "TRT", "trackId": "main_up", "positionRatio": 0.7, "speed": 0.004}
+  ]
+}

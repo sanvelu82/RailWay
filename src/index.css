@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #1a1a1a;
+  color: white;
+  overflow: hidden;
+}
+
+.app-container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.dashboard-view {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  cursor: grab;
+}
+
+.dashboard-view:active {
+  cursor: grabbing;
+}
+
+.map-canvas {
+  position: absolute;
+  transform-origin: 0 0;
+}
+
+.station-container {
+  position: absolute;
+}
+
+.station-container.fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background-color: #1a1a1a;
+}
+
+.station-header {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 4px 8px;
+  border-radius: 4px;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.station-header h3 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.fullscreen-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid #555;
+  color: #ccc;
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 3px;
+  z-index: 10;
+}
