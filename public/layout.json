@@ -72,20 +72,21 @@
       ]
     },
     "NG": {
-      "name": "Nagari", "code": "NG", "position": [1600, 0], "width": 600,
+      "name": "Nagari", "code": "NG", "position": [1600, 0], "width": 700,
       "platforms": [{"trackId": "p1_loop"}, {"trackId": "p2_main"}, {"trackId": "p3_main"}],
       "platformLabels": [{"text": "PF 1", "x": 300, "y": 90}, {"text": "PF 2", "x": 300, "y": 120}, {"text": "PF 3", "x": 300, "y": 150}],
       "tracks": [
         {"id": "main_up", "points": [0, 130, 600, 130]},
         {"id": "main_down", "points": [0, 160, 600, 160]},
-        {"id": "p1_loop", "points": [100, 100, 500, 100]},
-        {"id": "p2_main", "points": [0, 130, 600, 130]},
+        {"id": "p1_loop", "points": [150, 100, 450, 100]},
+        {"id": "p2_main", "points": [0, 130, 630, 130]},
         {"id": "p3_main", "points": [0, 160, 600, 160]}
       ],
       "switches": [
         {"id": "sw1_a", "type": "turnout", "points": [100, 130, 150, 100]},
-        {"id": "sw1_b", "type": "turnout", "points": [100, 100, 150, 130]},
-        {"id": "sw2_a", "type": "turnout", "points": [500, 100, 450, 130]}
+        {"id": "sw1_c", "type": "turnout", "points": [100, 130, 150, 160]},
+        {"id": "sw1_b", "type": "turnout", "points": [500, 130, 450, 100]},
+        {"id": "sw1_b", "type": "turnout", "points": [500, 130, 450, 160]}
       ]
     },
     "PUT": {

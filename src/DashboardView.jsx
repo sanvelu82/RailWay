@@ -67,27 +67,13 @@ const DashboardView = ({ layout, setFullscreen, occupiedBlocks, trains }) => {
                 if(!fromPoint || !toPoint) return null;
                 
                 if (line.vertical) {
-                  const baseRadius = 50; // You can adjust the tightness of the curve
-                  const trackSeparation = 30; // Distance between main_up and main_down
+                  const baseRadius = 60; // Adjust the curve tightness
+                  const trackSeparation = 30; // This MUST match the y-difference between your main lines
 
-                  // This logic correctly determines if a track is on the inside or outside of a turn,
-                  // regardless of which direction the turn is.
-                  const isLeftTurn = toPoint.x < fromPoint.x;
-                  const isUpwardTurn = toPoint.y < fromPoint.y;
-                  const isDownTrack = line.fromTrackId.includes('down');
-                  
-                  let radius;
-                  if ((isLeftTurn && isDownTrack) || (!isLeftTurn && !isDownTrack) || (isUpwardTurn && isDownTrack) || (!isUpwardTurn && !isDownTrack)) {
-                     // Conditions where this track is on the outside of the curve
-                     radius = baseRadius + trackSeparation;
-                  } else {
-                    // Conditions where this track is on the inside of the curve
-                    radius = baseRadius;
-                  }
-
-                  // A simpler but less robust way to determine radius for your specific layout
-                  // const radius = line.fromTrackId.includes('down') ? baseRadius + trackSeparation : baseRadius;
-
+                  // A simple, reliable way to set the radius for your specific U-shaped turn
+                  const radius = line.fromTrackId.includes('down') 
+                    ? baseRadius + trackSeparation 
+                    : baseRadius;
 
                   return (
                     <Shape
