@@ -76,3 +76,16 @@ body {
   border-radius: 3px;
   z-index: 10;
 }
+.app-container {
+  /* Make the container larger than the screen */
+  width: 149.25vw;  /* This is 100vw / 0.67 */
+  height: 149.25vh; /* This is 100vh / 0.67 */
+
+  /* Scale it back down to 67%, which makes it fit the screen again */
+  transform: scale(0.67);
+
+  /* Set the scaling origin to the top-left corner */
+  transform-origin: top left;
+  
+  overflow: hidden;
+}
