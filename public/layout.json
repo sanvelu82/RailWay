@@ -143,9 +143,9 @@
       {"stationCode": "AJJ", "trackId": "p4", "startRatio": 0.3, "endRatio": 0.6}
   ],
   "trains": [
-      {"id": "T22601", "stationCode": "AJJ", "trackId": "p3", "positionRatio": 0.2, "speed": 0.003},
-      {"id": "T12798", "stationCode": "RU", "trackId": "p2", "positionRatio": 0.8, "speed": -0.002},
-      {"id": "T16057", "stationCode": "AJJ", "trackId": "p5", "positionRatio": 0.5, "speed": 0.0025},
+      {"id": "T22601", "stationCode": "AJJ", "trackId": "p3", "positionRatio": 0.2, "speed": 0.001},
+      {"id": "T12798", "stationCode": "RU", "trackId": "p2", "positionRatio": 0.8, "speed": -0.0005},
+      {"id": "T16057", "stationCode": "AJJ", "trackId": "p5", "positionRatio": 0.5, "speed": 0.00003},
       {"id": "T06417", "stationCode": "TRT", "trackId": "p1_loop", "positionRatio": 0.1, "speed": 0},
       {"id": "T12164", "stationCode": "NG", "trackId": "main_down", "positionRatio": 0.9, "speed": -0.004},
       {"id": "T17209", "stationCode": "AJJ", "trackId": "p1", "positionRatio": 0.3, "speed": 0.0035},
@@ -158,7 +158,7 @@
       {"id": "T22159", "stationCode": "NG", "trackId": "p1_loop", "positionRatio": 0.8, "speed": 0},
       {"id": "T12603", "stationCode": "RU", "trackId": "main_down", "positionRatio": 0.3, "speed": -0.004},
       {"id": "T12695", "stationCode": "AJJ", "trackId": "main_up", "positionRatio": 0.95, "speed": 0.005},
-      {"id": "T12839", "stationCode": "PUT", "trackId": "main_down", "positionRatio": 0.2, "speed": -0.005},
+      {"id": "T12839", "stationCode": "PUT", "trackId": "main_down", "positionRatio": 0.2, "speed": -0.0002},
       {"id": "T12077", "stationCode": "TRT", "trackId": "main_up", "positionRatio": 0.7, "speed": 0.004}
   ]
 }
