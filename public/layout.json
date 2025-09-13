@@ -41,15 +41,16 @@
         {"id": "sw_w3", "type": "crossover", "points": [200, 140, 250, 110]},
         {"id": "sw_w4", "type": "crossover", "points": [200, 200, 250, 230]},
         {"id": "sw_w5", "type": "crossover", "points": [300, 110, 350, 80]},
-        {"id": "sw_w6", "type": "crossover", "points": [300, 230, 350, 260]},
-        {"id": "sw_w7", "type": "crossover", "points": [400, 260, 450, 290]},
+        {"id": "sw_w6", "type": "crossover", "points": [270, 230, 320, 260]},
+        {"id": "sw_w7", "type": "crossover", "points": [350, 260, 400, 290]},
         {"id": "diamond_1", "type": "diamond", "points": [425, 155, 475, 185]},
         {"id": "sw_e1", "type": "crossover", "points": [750, 140, 800, 155]},
         {"id": "sw_e2", "type": "crossover", "points": [750, 200, 800, 185]},
         {"id": "sw_e3", "type": "crossover", "points": [650, 110, 700, 140]},
         {"id": "sw_e4", "type": "crossover", "points": [650, 230, 700, 200]},
-        {"id": "sw_e5", "type": "crossover", "points": [550, 80, 600, 110]},
-        {"id": "sw_e6", "type": "crossover", "points": [550, 260, 600, 230]}
+        {"id": "sw_e5", "type": "crossover", "points": [580, 80, 630, 110]},
+        {"id": "sw_e6", "type": "crossover", "points": [590, 260, 640, 230]},
+        {"id": "sw_e7", "type": "crossover", "points": [580, 260, 530, 290]}
       ]
     },
     "TRT": {
@@ -66,8 +67,8 @@
       ],
       "switches": [
         {"id": "sw1_a", "type": "turnout", "points": [100, 130, 150, 100]},
-        {"id": "sw1_b", "type": "turnout", "points": [100, 100, 150, 130]},
-        {"id": "sw2_a", "type": "turnout", "points": [500, 100, 450, 130]},
+        {"id": "sw2_b", "type": "turnout", "points": [500, 130, 450, 100]},
+         {"id": "sw2_b", "type": "turnout", "points": [570, 160, 520, 130]},
         {"id": "sw3", "type": "diamond", "points": [300, 130, 350, 160]}
       ]
     },
